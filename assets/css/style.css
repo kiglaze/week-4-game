@@ -20,9 +20,6 @@ h3 {
 h1,.main-content {
 	margin: 2% 3% 0% 3%;
 }
-/*p {
-	margin-bottom: 1%;
-}*/
 section {
 	margin-bottom: 2%;
 }
@@ -81,17 +78,11 @@ section.instructions {
 }
 
 @media screen and (max-width: 980px) {
-/*    body {
-        color: blue;
-    }*/
 	.crystal-container {
 		height: 300px;
 	}
 }
 @media screen and (max-width: 868px) {
-/*    body {
-        color: lightgreen;
-    }*/
     .crystals-wrapper {
     	flex-wrap: wrap;
     	align-content: space-around;
@@ -107,9 +98,6 @@ section.instructions {
     }
 }
 @media screen and (max-width: 640px) {
-/*    body {
-        color: orange;
-    }*/
     .crystal-container {
     	width: 42%;
     	height: 120px;
