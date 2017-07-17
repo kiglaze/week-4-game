@@ -1,0 +1,28 @@
+body {
+	margin: 2% 3% 0% 3%;
+}
+h1 {
+	margin-bottom: 1%;
+	font-weight: 2;
+}
+div {
+	margin-bottom: 1%;
+}
+.crystals {
+}
+.crystals-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.crystal-container {
+	background-color: black;
+	width: 22%;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.crystal {
+	height: 90%;
+}
