@@ -1,6 +1,7 @@
 $(document).ready(function(){
-	const minGoal = 5;
-	const maxGoal = 10;
+	const MIN_GOAL = 5;
+	const MAX_GOAL = 10;
+	const MIN_CRYSTAL_VAL = 1;
 	var currTotalScore = 0;
 	var loseCount = 0;
 	var winCount = 0;
@@ -18,13 +19,13 @@ $(document).ready(function(){
 		return Math.floor(Math.random() * (max + 1 - min)) + min;
 	}
 	function generateGoalScore() {
-		var potentialGoalNum = generateRandomNumberInRange(minGoal, maxGoal);
+		var potentialGoalNum = generateRandomNumberInRange(MIN_GOAL, MAX_GOAL);
 		setGoalScore(potentialGoalNum);
 	}
 	function generateCrystalPointVals(goalScore) {
 		var crystalPoints = [];
 		$(".crystals-wrapper").children().each(function(key, value) {
-			crystalPoints[key] = generateRandomNumberInRange(1, goalScore);
+			crystalPoints[key] = generateRandomNumberInRange(MIN_CRYSTAL_VAL, goalScore);
 		});
 		return crystalPoints;
 	}
