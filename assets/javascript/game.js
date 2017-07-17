@@ -24,7 +24,7 @@ $(document).ready(function(){
 	function generateCrystalPointVals(goalScore) {
 		var crystalPoints = [];
 		$(".crystals-wrapper").children().each(function(key, value) {
-			crystalPoints[key] = generateRandomNumberInRange(minGoal, goalScore);
+			crystalPoints[key] = generateRandomNumberInRange(1, goalScore);
 		});
 		return crystalPoints;
 	}
