@@ -5,6 +5,7 @@ h1,h3 {
 }
 body {
 	background-image: url("../images/postojna-cave.jpg");
+	background-color: #ce8e64;
 	font-family: 'Zilla Slab', serif;
 	letter-spacing: 2px;
 }
