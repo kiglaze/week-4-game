@@ -47,7 +47,8 @@ section.instructions {
 }
 .crystal-container {
 	background-color: black;
-	width: 22%;
+	border: black 4px solid;
+	width: 23%;
 	height: 350px;
 	display: flex;
 	justify-content: center;
@@ -55,7 +56,8 @@ section.instructions {
 	overflow: hidden;
 }
 .crystal {
-	height: 90%;
+	height: 95%;
+	width: auto;
 }
 .points {
 	display: flex;
@@ -76,4 +78,45 @@ section.instructions {
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+@media screen and (max-width: 980px) {
+/*    body {
+        color: blue;
+    }*/
+	.crystal-container {
+		height: 300px;
+	}
+}
+@media screen and (max-width: 868px) {
+/*    body {
+        color: lightgreen;
+    }*/
+    .crystals-wrapper {
+    	flex-wrap: wrap;
+    	align-content: space-around;
+    	justify-content: space-around;
+    	margin-left: 15%;
+    	margin-right: 15%;
+    }
+    .crystal-container {
+    	width: 42%;
+    	height: 190px;
+    	margin-bottom: 1.5%;
+    	margin: 0% 1% 1.5% 1%;
+    }
+}
+@media screen and (max-width: 640px) {
+/*    body {
+        color: orange;
+    }*/
+    .crystal-container {
+    	width: 42%;
+    	height: 120px;
+    	margin: 0% 1% 1.7% 1%;
+    }
+    .crystal {
+		height: auto;
+		width: 90%;
+	}
 }
