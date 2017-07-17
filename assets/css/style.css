@@ -57,6 +57,13 @@ section.instructions {
 .crystal {
 	height: 90%;
 }
+.points {
+	display: flex;
+	flex-direction: row;
+}
+.points > .point-value {
+	margin-left: 2%;
+}
 
 .transparent-box {
 	background-color: #ffffff;

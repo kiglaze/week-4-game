@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>Crystals Collector Game</title>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.js"
+	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	crossorigin="anonymous"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -18,17 +22,17 @@
 			<p>Each time the game starts, the game will change the values of each crystal.</p>
 		</section>
 		<section class="score">
-			<div class="goal"><h3>Current points goal: </h3><span class="random-number-goal"></span>
+			<div class="goal points"><h3>Current points goal: </h3><span class="random-number-goal point-value"></span>
 			</div>
 			<div class="success-record">
 				<table>
 					<tr>
 						<th>Wins:</th>
-						<td>0</td>
+						<td id="win-count">0</td>
 					</tr>
 					<tr>
 						<th>Losses:</th>
-						<td>0</td>
+						<td id="lose-count">0</td>
 					</tr>
 				</table>
 			</div>
@@ -50,9 +54,9 @@
 			</div>
 		</section>
 		<section class="score">
-			<div class="total-score">
+			<div class="current-total-score points">
 				<h3>Your total score is:</h3>
-				<span class="score">0</span>
+				<span class="current-score point-value">0</span>
 			</div>
 		</section>
 	</div>
