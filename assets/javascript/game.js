@@ -41,11 +41,11 @@ $(document).ready(function(){
 	}
 	function updateCurrTotalScore(score) {
 		setCurrTotalScore(score);
-		if(score > 0) {
-			if(currTotalScore > goalScore) {
-				endGame(false);
-			} else if(currTotalScore === goalScore) {
+		if(score > 0 && currTotalScore >= goalScore) {
+			if(currTotalScore === goalScore) {
 				endGame(true);
+			} else {
+				endGame(false);
 			}
 		}
 	}
