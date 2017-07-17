@@ -1,27 +1,42 @@
-h1 {
+h1,h3 {
 	margin-bottom: 1%;
-	font-weight: 2;
-}
-div {
-	margin-bottom: 1%;
+	font-weight: 900;
+	font-family: 'Cinzel', serif;
 }
 body {
 	background-image: url("../images/postojna-cave.jpg");
+	font-family: 'Zilla Slab', serif;
+	letter-spacing: 2px;
+}
+h1 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.2em;
+}
+.main-content {
+	font-size: 1em;
 }
 h1,.main-content {
 	margin: 2% 3% 0% 3%;
 }
-.transparent-box {
-	background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.75;
-    filter: alpha(opacity=75); /* For IE8 and earlier */
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+/*p {
+	margin-bottom: 1%;
+}*/
+section {
+	margin-bottom: 2%;
+}
+section.instructions {
+	line-height: 1.6;
+}
+.success-record table {
+	margin-bottom: 1%;
+}
+.success-record th {
+	font-family: 'Cinzel', serif;
+	font-weight: 700;
+	text-align: left;
+	padding: 0% 20px 5px 0%;
 }
 .crystals {
 }
@@ -37,7 +52,21 @@ h1,.main-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 .crystal {
 	height: 90%;
+}
+
+.transparent-box {
+	background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.75;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
